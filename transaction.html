@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy, Sell & Trade Center — Car Bazaar</title>
+  <meta name="description" content="List a car for sale, request a trade-in with an escrow wallet simulator, or book a buyer viewing.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="logo-mark">CB</span> Car<b>Bazaar</b></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-matrix">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Marketplace</a></li>
+        <li><a href="compare.html">Compare</a></li>
+        <li><a href="transaction.html">Buy / Sell / Trade</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container" style="max-width:860px">
+      <p class="eyebrow">Transaction center</p>
+      <h1>Buy, Sell &amp; Trade</h1>
+      <p class="lead">Choose what you'd like to do. Every submission is validated and securely recorded.</p>
+
+      <div class="tabs" style="margin-top:28px">
+        <button class="tab-btn active" data-tab="tab-sell">📋 List for Sale</button>
+        <button class="tab-btn" data-tab="tab-trade">🔄 Trade-In</button>
+        <button class="tab-btn" data-tab="tab-view">📅 Book a Viewing</button>
+      </div>
+
+      <!-- SELL -->
+      <section class="tab-panel active" id="tab-sell">
+        <div class="card" style="padding:28px">
+          <h2>List your vehicle for sale</h2>
+          <div class="form-status" id="sell-status"></div>
+          <form id="sell-form" novalidate>
+            <div class="form-grid">
+              <div class="field"><label>Full name</label><input type="text" name="name" data-rule="name" placeholder="e.g. Sara Ahmed"><span class="err"></span></div>
+              <div class="field"><label>Email</label><input type="text" name="email" data-rule="email" placeholder="you@example.com"><span class="err"></span></div>
+              <div class="field"><label>Phone</label><input type="text" name="phone" data-rule="phone" placeholder="+9715XXXXXXXX"><span class="err"></span></div>
+              <div class="field"><label>Asking price (AED)</label><input type="number" name="price" placeholder="120000"><span class="err"></span></div>
+              <div class="field"><label>Make</label><input type="text" name="car_make" placeholder="Toyota"><span class="err"></span></div>
+              <div class="field"><label>Model</label><input type="text" name="car_model" placeholder="Supra"><span class="err"></span></div>
+              <div class="field"><label>Production year</label><input type="number" name="car_year" data-rule="year" placeholder="2022"><span class="err"></span></div>
+              <div class="field"><label>Mileage (km)</label><input type="text" name="mileage" placeholder="24,000"><span class="err"></span></div>
+              <div class="field full"><label>Notes</label><textarea name="message" placeholder="Condition, service history, extras…"></textarea><span class="err"></span></div>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit" style="margin-top:18px">Submit Listing</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- TRADE -->
+      <section class="tab-panel" id="tab-trade">
+        <div class="card" style="padding:28px">
+          <h2>Trade-in exchange request</h2>
+          <div class="form-status" id="trade-status"></div>
+          <form id="trade-form" novalidate>
+            <div class="form-grid">
+              <div class="field"><label>Full name</label><input type="text" name="name" data-rule="name"><span class="err"></span></div>
+              <div class="field"><label>Email</label><input type="text" name="email" data-rule="email"><span class="err"></span></div>
+              <div class="field"><label>Phone</label><input type="text" name="phone" data-rule="phone"><span class="err"></span></div>
+              <div class="field"><label>Your car's production year</label><input type="number" name="car_year" data-rule="year" placeholder="2019"><span class="err"></span></div>
+              <div class="field full"><label>Marketplace car you want</label>
+                <select id="trade-market-car" name="target_car"><option value="">— Select a car —</option></select><span class="err"></span></div>
+              <div class="field full"><label>Estimated value of your current car (AED)</label>
+                <input type="number" id="trade-my-value" name="my_value" placeholder="e.g. 95000"><span class="err"></span></div>
+            </div>
+
+            <!-- Escrow wallet simulator -->
+            <div class="wallet hide" id="wallet">
+              <h3>🔐 Bazaar Clearance Wallet</h3>
+              <div class="row"><span>Marketplace car value</span><span id="wallet-market">—</span></div>
+              <div class="row"><span>Your car value</span><span id="wallet-mine">—</span></div>
+              <div class="balance" id="wallet-balance">—</div>
+              <p class="muted" id="wallet-note" style="color:rgba(255,255,255,.7);margin:0"></p>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit" style="margin-top:18px">Submit Trade-In Request</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- VIEWING -->
+      <section class="tab-panel" id="tab-view">
+        <div class="card" style="padding:28px">
+          <h2>Request a buyer viewing slot</h2>
+          <div class="form-status" id="viewing-status"></div>
+          <form id="viewing-form" novalidate>
+            <div class="form-grid">
+              <div class="field"><label>Full name</label><input type="text" name="name" data-rule="name"><span class="err"></span></div>
+              <div class="field"><label>Email</label><input type="text" name="email" data-rule="email"><span class="err"></span></div>
+              <div class="field"><label>Phone</label><input type="text" name="phone" data-rule="phone"><span class="err"></span></div>
+              <div class="field"><label>Preferred date</label><input type="date" name="date"><span class="err"></span></div>
+              <div class="field full"><label>Car of interest (make &amp; model)</label><input type="text" name="car_model" placeholder="BMW M4 Competition"><span class="err"></span></div>
+              <div class="field full"><label>Anything we should know?</label><textarea name="message"></textarea><span class="err"></span></div>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit" style="margin-top:18px">Book Viewing</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:0;margin:0;padding:0">
+        <span>© 2026 Car Bazaar. All rights reserved.</span>
+        <span>Dubai, United Arab Emirates</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/transaction.js"></script>
+</body>
+</html>

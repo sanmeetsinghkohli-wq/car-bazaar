@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace — Car Bazaar</title>
+  <meta name="description" content="Live feed of PPI-verified used cars with diagnostic scores and live auctions.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="logo-mark">CB</span> Car<b>Bazaar</b></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-matrix">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Marketplace</a></li>
+        <li><a href="compare.html">Compare</a></li>
+        <li><a href="transaction.html">Buy / Sell / Trade</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <p class="eyebrow">Live marketplace feed</p>
+      <div class="toolbar">
+        <div>
+          <h1 style="margin:0">Verified Vehicles</h1>
+          <p class="muted" style="margin:4px 0 0">Aggregated from across the market · every car PPI-inspected.</p>
+        </div>
+        <a class="btn btn--ghost" href="compare.html">Open Compare Meter →</a>
+      </div>
+
+      <!-- Live auction ticker -->
+      <div class="auction-strip" id="auction-strip"></div>
+
+      <!-- Car cards (populated by JS) -->
+      <div class="car-grid" id="car-grid">
+        <p class="loading">Loading verified vehicles…</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Floating compare bar -->
+  <div id="compare-bar" class="hide" style="position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--bg-deep);color:#fff;padding:14px 0">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+      <span><strong id="compare-count">0</strong> vehicle(s) queued for comparison</span>
+      <a class="btn btn--accent btn--sm" href="compare.html">Compare now →</a>
+    </div>
+  </div>
+
+  <!-- PPI checklist modal -->
+  <div class="modal-backdrop" id="ppi-modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="ppi-modal-title">
+      <div class="modal-head">
+        <h3 id="ppi-modal-title">PPI Report</h3>
+        <button class="modal-close" id="ppi-modal-close" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body" id="ppi-modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:0;margin:0;padding:0">
+        <span>© 2026 Car Bazaar. All rights reserved.</span>
+        <span>Dubai, United Arab Emirates</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/inventory.js"></script>
+</body>
+</html>

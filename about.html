@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Car Bazaar</title>
+  <meta name="description" content="Our mission to eliminate used-car shopping anxiety, our awards, and what our clients say.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="logo-mark">CB</span> Car<b>Bazaar</b></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-matrix">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Marketplace</a></li>
+        <li><a href="compare.html">Compare</a></li>
+        <li><a href="transaction.html">Buy / Sell / Trade</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Mission -->
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <p class="eyebrow">Our mission</p>
+        <h1>We exist to eliminate used-car shopping anxiety.</h1>
+        <p class="lead">Buying or selling a used car shouldn't feel like a gamble. Car Bazaar pairs every listing with an independent Pre-Purchase Inspection (PPI), a transparent condition score, and a secure trade process — so trust is built in, not negotiated.</p>
+        <a class="btn btn--primary" href="inventory.html">See verified cars</a>
+      </div>
+      <div class="card" style="padding:28px">
+        <h3>Why buyers and sellers trust us</h3>
+        <ul style="padding-left:18px;color:var(--ink-soft);line-height:1.9">
+          <li>200-point independent inspections on every vehicle</li>
+          <li>Color-coded PPI scores you can verify, not just claims</li>
+          <li>Escrow-style clearance so money moves safely</li>
+          <li>Mobile inspection teams across all 7 emirates</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section class="section section--tight" style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="container">
+      <p class="eyebrow">Recognition</p>
+      <h2>Industry awards</h2>
+      <ul class="award-list" id="award-list" style="margin-top:20px"><li class="muted">Loading awards…</li></ul>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <p class="eyebrow">Client voices</p>
+      <h2>What our clients say</h2>
+      <div class="testi-grid" id="testi-grid" style="margin-top:24px"></div>
+    </div>
+  </section>
+
+  <!-- Declaration of contribution -->
+  <section class="section section--tight">
+    <div class="container">
+      <p class="eyebrow">Transparency</p>
+      <h2>Declaration of Contribution</h2>
+      <p class="lead">A clear breakdown of each group member's contribution to this project.</p>
+      <div class="table-wrap" style="margin-top:20px">
+        <table class="data">
+          <caption>Group member contributions</caption>
+          <thead>
+            <tr><th>Member</th><th>Role</th><th>Components Completed</th><th>Contribution</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Member 1</td><td>Front-End Lead</td><td>Home page, image map, milestone table, global CSS design system</td><td>25%</td></tr>
+            <tr><td>Member 2</td><td>Marketplace Developer</td><td>Inventory feed, PPI modals, live auction ticker</td><td>25%</td></tr>
+            <tr><td>Member 3</td><td>Logic Developer</td><td>Comparison meter, best-value logic, depreciation tracker, wallet simulator</td><td>25%</td></tr>
+            <tr><td>Member 4</td><td>Back-End Developer</td><td>Node server, JSON/SQL data tier, form validation, chatbox</td><td>25%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:0;margin:0;padding:0">
+        <span>© 2026 Car Bazaar. All rights reserved.</span>
+        <span>Dubai, United Arab Emirates</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Live negotiation chatbox -->
+  <button class="chat-fab" id="chat-fab" aria-label="Open chat">💬</button>
+  <div class="chat-window" id="chat-window">
+    <div class="chat-head">Bazaar Assistant <small>● Online — automated</small></div>
+    <div class="chat-body" id="chat-body"></div>
+    <div class="chat-input">
+      <input type="text" id="chat-input" placeholder="Ask about pricing, PPI, trade-ins…">
+      <button id="chat-send">Send</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>

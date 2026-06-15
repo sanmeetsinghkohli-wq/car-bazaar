@@ -1,0 +1,213 @@
+{
+  "cars": [
+    {
+      "id": "car_001",
+      "make": "Toyota",
+      "model": "Supra",
+      "year": 2022,
+      "price": 185000,
+      "mileage": "24,000 km",
+      "source": "Dubizzle",
+      "is_auction": true,
+      "current_bid": 185500,
+      "ppi_score": 94,
+      "ppi_status": "Excellent",
+      "ppi_breakdown": {
+        "engine": "96% - Pristine physical state, no leaks detected",
+        "chassis": "100% - Factory original frame, zero accidents",
+        "electronics": "90% - Minor media display software patch available"
+      },
+      "image": "images/supra.jpg"
+    },
+    {
+      "id": "car_002",
+      "make": "Nissan",
+      "model": "GT-R",
+      "year": 2021,
+      "price": 415000,
+      "mileage": "18,500 km",
+      "source": "YallaMotor",
+      "is_auction": true,
+      "current_bid": 417000,
+      "ppi_score": 91,
+      "ppi_status": "Excellent",
+      "ppi_breakdown": {
+        "engine": "92% - Turbo system healthy, recent service done",
+        "chassis": "95% - One panel repainted, structurally sound",
+        "electronics": "88% - All driver aids functional, one sensor flagged"
+      },
+      "image": "images/gtr.jpg"
+    },
+    {
+      "id": "car_003",
+      "make": "BMW",
+      "model": "M4 Competition",
+      "year": 2023,
+      "price": 365000,
+      "mileage": "9,200 km",
+      "source": "Dubizzle",
+      "is_auction": false,
+      "current_bid": 0,
+      "ppi_score": 97,
+      "ppi_status": "Excellent",
+      "ppi_breakdown": {
+        "engine": "98% - As-new condition, full BMW service history",
+        "chassis": "99% - Untouched factory frame",
+        "electronics": "95% - All systems nominal, latest firmware"
+      },
+      "image": "images/m4.jpg"
+    },
+    {
+      "id": "car_004",
+      "make": "Mercedes-Benz",
+      "model": "C200 AMG Line",
+      "year": 2020,
+      "price": 142000,
+      "mileage": "41,000 km",
+      "source": "CarSwitch",
+      "is_auction": false,
+      "current_bid": 0,
+      "ppi_score": 84,
+      "ppi_status": "Good",
+      "ppi_breakdown": {
+        "engine": "86% - Healthy, minor oil seep monitored",
+        "chassis": "88% - Two minor cosmetic dents, frame intact",
+        "electronics": "78% - Reverse camera intermittent, repair quoted"
+      },
+      "image": "images/c200.jpg"
+    },
+    {
+      "id": "car_005",
+      "make": "Porsche",
+      "model": "911 Carrera",
+      "year": 2022,
+      "price": 615000,
+      "mileage": "12,800 km",
+      "source": "Dubizzle",
+      "is_auction": false,
+      "current_bid": 0,
+      "ppi_score": 96,
+      "ppi_status": "Excellent",
+      "ppi_breakdown": {
+        "engine": "97% - Flawless, dealer maintained",
+        "chassis": "98% - Original frame, no accident history",
+        "electronics": "93% - PCM fully functional, all options working"
+      },
+      "image": "images/911.jpg"
+    },
+    {
+      "id": "car_006",
+      "make": "Ford",
+      "model": "Mustang GT",
+      "year": 2019,
+      "price": 118000,
+      "mileage": "55,000 km",
+      "source": "YallaMotor",
+      "is_auction": false,
+      "current_bid": 0,
+      "ppi_score": 79,
+      "ppi_status": "Good",
+      "ppi_breakdown": {
+        "engine": "82% - Strong V8, due for spark plugs",
+        "chassis": "80% - Curb rash on wheels, frame solid",
+        "electronics": "74% - SYNC unit lags, one airbag light cleared"
+      },
+      "image": "images/mustang.jpg"
+    },
+    {
+      "id": "car_007",
+      "make": "Audi",
+      "model": "RS5",
+      "year": 2021,
+      "price": 298000,
+      "mileage": "27,400 km",
+      "source": "CarSwitch",
+      "is_auction": false,
+      "current_bid": 0,
+      "ppi_score": 89,
+      "ppi_status": "Excellent",
+      "ppi_breakdown": {
+        "engine": "91% - Excellent compression across cylinders",
+        "chassis": "90% - Clean frame, professional detailing done",
+        "electronics": "86% - Virtual cockpit perfect, minor USB fault"
+      },
+      "image": "images/rs5.jpg"
+    },
+    {
+      "id": "car_008",
+      "make": "Lexus",
+      "model": "RX 350",
+      "year": 2020,
+      "price": 165000,
+      "mileage": "48,000 km",
+      "source": "Dubizzle",
+      "is_auction": false,
+      "current_bid": 0,
+      "ppi_score": 87,
+      "ppi_status": "Good",
+      "ppi_breakdown": {
+        "engine": "90% - Reliable, full Lexus service record",
+        "chassis": "88% - Minor bumper scuff, frame original",
+        "electronics": "83% - Infotainment responsive, one parking sensor weak"
+      },
+      "image": "images/rx350.jpg"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Ahmed",
+      "role": "Trader",
+      "rating": 5,
+      "comment": "Traded my hatchback for an SUV in an hour. The verified PPI reports gave me complete peace of mind!"
+    },
+    {
+      "id": 2,
+      "name": "Omar Farouk",
+      "role": "Buyer",
+      "rating": 5,
+      "comment": "The PPI breakdown caught an issue the seller never mentioned. Saved me thousands. Genuinely transparent."
+    },
+    {
+      "id": 3,
+      "name": "Priya Nair",
+      "role": "Seller",
+      "rating": 4,
+      "comment": "Listed my car and had a verified buyer viewing within two days. The escrow simulator made the trade-in math effortless."
+    },
+    {
+      "id": 4,
+      "name": "Khalid Al Mansoori",
+      "role": "Buyer",
+      "rating": 5,
+      "comment": "The live auction ticker is addictive. Won my GT-R at a fair price and the inspection score was spot on."
+    }
+  ],
+  "awards": [
+    {
+      "id": 1,
+      "year": 2025,
+      "title": "Best Automotive Marketplace - UAE",
+      "body": "Gulf Auto Excellence Awards"
+    },
+    {
+      "id": 2,
+      "year": 2024,
+      "title": "Innovation in Vehicle Inspection Technology",
+      "body": "MENA Mobility Summit"
+    },
+    {
+      "id": 3,
+      "year": 2024,
+      "title": "Consumer Trust Seal - Pre-Owned Vehicles",
+      "body": "Emirates Consumer Protection Council"
+    },
+    {
+      "id": 4,
+      "year": 2023,
+      "title": "Top Emerging Auto-Tech Startup",
+      "body": "Dubai Future Foundation"
+    }
+  ],
+  "ppi_bookings": []
+}

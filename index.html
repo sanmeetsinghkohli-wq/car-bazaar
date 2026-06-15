@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Bazaar — Buy, Sell & Trade-In Verified Cars in the UAE</title>
+  <meta name="description" content="Car Bazaar is the UAE's PPI-verified marketplace to buy, sell, or trade-in used cars with complete confidence.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo-mark">CB</span> Car<b>Bazaar</b>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-matrix">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Marketplace</a></li>
+        <li><a href="compare.html">Compare</a></li>
+        <li><a href="transaction.html">Buy / Sell / Trade</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow" style="color:#9fc6ff">UAE's verified used-car marketplace</p>
+      <h1>Buy, Sell, or Trade-In with total confidence.</h1>
+      <p class="lead">Every car aggregated from across the market is independently inspected and given a transparent PPI score — so you never gamble on a used vehicle again.</p>
+      <div class="hero-actions">
+        <a class="btn btn--primary" href="inventory.html">Browse Marketplace</a>
+        <a class="btn btn--ghost" style="color:#fff;border-color:rgba(255,255,255,.35)" href="transaction.html">Sell or Trade-In</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buy / Sell / Trade matrix -->
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">How it works</p>
+      <h2>One platform. Three ways to move.</h2>
+      <div class="matrix-grid" style="margin-top:32px">
+        <a class="matrix-card" href="inventory.html">
+          <div class="ico">🚗</div>
+          <h3>Buy</h3>
+          <p>Browse a live feed of PPI-verified cars with full diagnostic reports and color-coded condition scores.</p>
+        </a>
+        <a class="matrix-card" href="transaction.html">
+          <div class="ico">💰</div>
+          <h3>Sell</h3>
+          <p>List your vehicle in minutes and connect with verified buyers requesting genuine viewing slots.</p>
+        </a>
+        <a class="matrix-card" href="transaction.html">
+          <div class="ico">🔄</div>
+          <h3>Trade-In</h3>
+          <p>Swap your car for one in our marketplace and see your Bazaar Clearance Balance instantly.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Regional image map -->
+  <section class="section section--tight" style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="container">
+      <p class="eyebrow">Where we operate</p>
+      <h2>Regional inspection coverage</h2>
+      <p class="lead">Click an emirate on the map to see active mobile PPI teams and physical hub locations in that zone.</p>
+
+      <div class="map-wrap" style="margin-top:24px;max-width:760px">
+        <!-- Inline SVG used as the image-map base so it renders without an external asset -->
+        <img src="images/uae-map.svg" alt="Map of UAE inspection regions" usemap="#uae-map"
+             onerror="this.src='images/placeholder.svg'" style="width:100%">
+        <map name="uae-map">
+          <area shape="rect" coords="430,40,620,160"  alt="Dubai"     href="#zone-dubai"   onclick="showZone('zone-dubai')">
+          <area shape="rect" coords="560,150,760,300" alt="Abu Dhabi" href="#zone-abudhabi" onclick="showZone('zone-abudhabi')">
+          <area shape="rect" coords="430,170,560,300" alt="Sharjah"   href="#zone-sharjah"  onclick="showZone('zone-sharjah')">
+          <area shape="circle" coords="300,120,70"     alt="Northern Emirates" href="#zone-north" onclick="showZone('zone-north')">
+        </map>
+      </div>
+
+      <div id="region-panels" style="margin-top:8px">
+        <div class="region-panel" id="zone-dubai">
+          <h3>Dubai Zone</h3>
+          <p class="muted">3 physical hubs (Al Quoz, Ras Al Khor, DIP) · 12 mobile PPI teams active daily, 8am–9pm.</p>
+        </div>
+        <div class="region-panel" id="zone-abudhabi">
+          <h3>Abu Dhabi Zone</h3>
+          <p class="muted">2 physical hubs (Mussafah, Khalifa City) · 7 mobile PPI teams covering the capital and Al Ain.</p>
+        </div>
+        <div class="region-panel" id="zone-sharjah">
+          <h3>Sharjah Zone</h3>
+          <p class="muted">1 physical hub (Industrial Area 13) · 5 mobile PPI teams across Sharjah & Ajman.</p>
+        </div>
+        <div class="region-panel" id="zone-north">
+          <h3>Northern Emirates Zone</h3>
+          <p class="muted">Mobile-only coverage · 4 PPI teams serving RAK, Fujairah & Umm Al Quwain on scheduled days.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate milestone timeline -->
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Our track record</p>
+      <h2>Corporate milestone timeline</h2>
+      <p class="lead">Verified growth metrics across our operating years.</p>
+      <div class="table-wrap" style="margin-top:24px">
+        <table class="data">
+          <caption>Car Bazaar growth, 2022–2025</caption>
+          <thead>
+            <tr><th>Year</th><th>Verified Inspections</th><th>Active Traders</th><th>Milestone</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>2022</td><td>4,200</td><td>1,150</td><td>Platform launch in Dubai</td></tr>
+            <tr><td>2023</td><td>11,800</td><td>3,900</td><td>Mobile PPI teams introduced</td></tr>
+            <tr><td>2024</td><td>27,500</td><td>9,400</td><td>Expanded to all 7 emirates</td></tr>
+            <tr><td>2025</td><td>46,300</td><td>18,700</td><td>Live auction marketplace launched</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Car<span style="color:var(--brand)">Bazaar</span></h4>
+          <p>The UAE's PPI-verified marketplace to buy, sell, and trade used cars without the anxiety.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="inventory.html">Marketplace</a>
+          <a href="compare.html">Compare</a>
+          <a href="transaction.html">Buy / Sell / Trade</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="about.html#testimonials">Testimonials</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Car Bazaar. All rights reserved.</span>
+        <span>Dubai, United Arab Emirates</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Reveal the selected region panel (image-map hotspot handler).
+    function showZone(id) {
+      document.querySelectorAll('.region-panel').forEach(function (p) { p.style.display = 'none'; });
+      var el = document.getElementById(id);
+      if (el) { el.style.display = 'block'; el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+      return false;
+    }
+    // Start with only the first panel shown.
+    document.querySelectorAll('.region-panel').forEach(function (p, i) { if (i > 0) p.style.display = 'none'; });
+  </script>
+</body>
+</html>

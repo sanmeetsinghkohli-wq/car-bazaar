@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340">
+  <rect width="760" height="340" fill="#eaf1fb"/>
+  <!-- stylised UAE landmass -->
+  <path d="M120 90 Q200 40 320 60 Q480 30 660 110 Q740 150 700 230 Q620 320 460 300 Q360 320 270 280 Q150 260 120 180 Z"
+        fill="#cfe0f7" stroke="#9fc1ee" stroke-width="2"/>
+  <!-- zone labels -->
+  <g font-family="Segoe UI, sans-serif" font-weight="700" fill="#0e1726">
+    <text x="500" y="105" font-size="18">Dubai</text>
+    <text x="600" y="225" font-size="18">Abu Dhabi</text>
+    <text x="455" y="240" font-size="16">Sharjah</text>
+    <text x="240" y="125" font-size="15">Northern Emirates</text>
+  </g>
+  <g fill="#0a6cff">
+    <circle cx="510" cy="95" r="6"/>
+    <circle cx="650" cy="215" r="6"/>
+    <circle cx="490" cy="230" r="6"/>
+    <circle cx="300" cy="120" r="6"/>
+  </g>
+  <text x="380" y="325" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#6b7689">Click a region to view PPI coverage</text>
+</svg>

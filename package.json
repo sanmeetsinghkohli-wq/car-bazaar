@@ -1,0 +1,11 @@
+{
+  "name": "car-bazaar",
+  "version": "1.0.0",
+  "description": "Car Bazaar - PPI-verified used-car marketplace (native Node.js server, no frameworks).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Car Bazaar Group",
+  "license": "MIT"
+}
